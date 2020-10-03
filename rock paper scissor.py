@@ -16,16 +16,16 @@ def player_choice(player_input):
     computer_choice_label.config(text = 'Computer Selected : ' + computer_input[0])
 
     if(player_input == computer_input):
-        winner_label.config(text = "its a Tie")
+        winner_label.config(text = "Oh! That was a Tie")
 
     elif((player_input[1] - computer_input[1]) % 3 == 1):
         player_score += 1
         winner_label.config(text="Congrats You Won!!!")
-        player_score_label.config(text = 'Your Score is: ' + str(player_score))
+        player_score_label.config(text = 'Your Score is ' + str(player_score))
     else:
         computer_score += 1
         winner_label.config(text="Oops,Computer Won!!!")
-        computer_score_label.config(text='Your Score is: ' + str(computer_score))
+        computer_score_label.config(text='Your Score is ' + str(computer_score))
 
 
 #Function to Randomly Select Computer Choice
